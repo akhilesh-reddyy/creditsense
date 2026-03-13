@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.env
+.venv/
+venv/
+env/
+
+# Secrets
+.env.local
+.env.*.local
+secrets.json
+
+# ML artefacts (large binary files — store in DVC or cloud)
+backend/model/artefacts/*.json
+backend/model/artefacts/*.pkl
+backend/model/artefacts/*.npy
+# Keep the artefacts directory itself
+!backend/model/artefacts/.gitkeep
+
+# Training data (generated — not committed)
+backend/data/*.csv
+
+# Node
+node_modules/
+frontend/dist/
+frontend/build/
+.npm/
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Logs
+*.log
+logs/
+
+# Docker
+.docker/
